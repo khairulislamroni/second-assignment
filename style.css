@@ -125,13 +125,28 @@ nav a {
 .main-sec-two {
     width: 80%;
     margin-left: 150px;
-    border: 1x solid red;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 100px;
 }
-.mst-text {
 
+.box-1 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.box-1 p {
+    margin-bottom: 15px;
+}
+.box-2 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px;
+    
+}
+.mini-box-1 h4 {
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 .mst-image {
@@ -139,8 +154,22 @@ nav a {
 
 }
 .mst-image img {
-    width: 150%;
+    width: 150%; 
+}
+.big-button button {
+    padding: 30px 50px;
+    background-color: orange;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 8px;
+    border: none;
     
+}
+.big-button button span {
+    font-size: medium;
+    font-weight: 400;
 }
 
 
@@ -175,6 +204,9 @@ nav a {
     border: 1px solid orange;
     border-radius: 5px;
 }
+.main-sec-three .box:hover {
+    border-color: blue;
+}
 .main-sec-three .box img, p {
     margin-bottom: 10px;
 }
@@ -206,16 +238,15 @@ nav a {
     font-family: Arial, Helvetica, sans-serif;
 
 }
+.last-sec .box-1 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
 .last-sec .box-2 {
     display: flex;
     justify-content: space-evenly;
     background-color: white;
 }
-.last-sec .box-1 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-}
-
     /* footer area */
 
 .footer {
@@ -231,4 +262,153 @@ nav a {
 .footer p {
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 40px;
+}
+
+        /* media query max-width-576px */
+
+@media screen and (max-width: 576px) {
+    /* header area */
+    header {
+        width: 500px;
+     }
+     /* nav area */
+     nav {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .left-nav a {
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    .right-nav {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .right-nav a {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    /* first section */
+    .first-section {
+        width: 400px;
+        height: 500px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 50px;
+        margin-top: 60px;  
+    }
+    .first-section-text {
+        width: 300px;
+        height: 300px;
+        
+    }
+    .mini-button button {
+        
+    }
+    /* second section */
+    .second-section {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    /* Main section */
+    .main-sec-one {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .mso-left {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        margin-left: 0;
+    }
+    .msol-image {
+        width: 200px;
+
+    }
+    .mso-right {
+        width: 40%;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    /* main section two */
+    .main-sec-two {
+        width: 40%;
+        margin-left: 0;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+    .mst-image {
+        width: 250px;
+    }
+    .mst-image img{
+        width: 100%;
+        margin-left: 40px;
+    }
+    .big-button button {
+        padding: 20px 40px;
+        font-size: 28px;
+        border-radius: 5px;
+        margin-left: 70px;
+        margin-top: 20px; 
+    }
+    .mst-text {
+        margin-left: 20px;
+    }
+    /* some facts */
+    .some-facts {
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    /* main section three */
+    .main-sec-three {
+        width: 500px;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: start;
+        margin: 50px 100px;
+    }
+    /* LAST SECTION */
+    .last-sec {
+        width: 340px;
+        grid-template-rows: repeat(1, 1fr);
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    .last-sec .box-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: start;
+        text-align: center;
+    }
+    /* footer area */
+    .footer {
+        width: 300px;
+        padding: 10px 0 20px 0;
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .footer p {
+        margin-top: 20px;
+    }
 }
